@@ -1,0 +1,29 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h2>Formulario Empleado</h2>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input [(ngModel)]="modelEmpleado.name" name="name" type="text" class="form-control"/>
+        </div>
+        
+        <div class="form-group">
+          <label for="lastname">Apellido:</label>
+          <input [(ngModel)]="modelEmpleado.lastname" name="last_name" type="text" class="form-control"/>
+        </div>
+        <div class="form-group">
+          <label for="birthday">Cumpleaños:</label>
+          <input [(ngModel)]="modelEmpleado.birthday" name="birthday" type="text" class="form-control"/>
+        </div>
+        
+        <div class="card-footer">
+          <input (click)="Guardar(modelEmpleado)" value="Guardar Datos" class="btn btn-success"/>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
